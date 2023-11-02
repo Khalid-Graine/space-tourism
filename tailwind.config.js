@@ -22,6 +22,10 @@ module.exports = {
         belle: ['Bellefair', 'sans' ],
         condensed: ['Barlow Condensed', 'sans'],
       },
+      colors: {
+        galaxy: '#fefefe20',
+        gray: '#D0D6F9',
+      }
 
     },
   },

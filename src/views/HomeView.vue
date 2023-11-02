@@ -1,21 +1,46 @@
-
 <template>
-  
-  <div 
-  class="countainer  " >
+  <div
+    class="bg-[url('@/assets/home/background-home-mobile.jpg')] md:bg-[url('@/assets/home/background-home-tablet.jpg')] lg:bg-[url('@/assets/home/background-home-desktop.jpg')] bg-no-repeat bg-center bg-cover min-h-screen countainer"
+  >
+    <div class="pt-28"></div>
+    <div
+      class="flex flex-col justify-between gap-12 md:flex-row md:ml-16 md:mt-14 md:w-10/12"
+    >
+      <div
+        class="flex items-center md:items-start md:w-6/12 flex-col gap-4 md:gap-6"
+      >
+        <p class="text-2xl text-gray">SO, YOU WANT TO TRAVEL TO</p>
+        <p
+          class="font-belle font-bold text-6xl md:text-[110px] lg:text-[150px]"
+        >
+          SPACE
+        </p>
+        <p class="text-gray text-center md:text-start">
+          Let’s face it, if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
 
-     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat alias eligendi praesentium ut doloremque, soluta doloribus delectus a nobis fuga rem atque culpa, magni, facere odio vero corporis saepe. Culpa veritatis illo similique illum nam provident tempora neque maiores? Veritatis, eum a aliquid repellat facere commodi dicta delectus beatae perferendis minima sed. Explicabo architecto voluptatem, soluta ratione quam consequuntur alTTTiquid atque est illo harum deleniti at accusantium tempore veniam corrupti sunt necessitatibus libero unde nemo corporis? Aut reprehenderit a nostrum voluptate nisi ipsam vitae esse temporibus corrupti sint facere eius, voluptatum expedita porro excepturi totam blanditiis quibusdam praesentium et repudiandae.</p>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio saepe in sapiente inventore repudiandae autem! Neque dolorum beatae, tempore corporis omnis ipsam fugit excepturi? Natus perspiciatis fugit ad sit ipsum, neque totam mollitia sed delectus, sint quos nam aut pariatur, itaque accusamus vero dolores? Blanditiis obcaecati sit quis modi odit sed aliquam voluptate quia sint cumque. Sapiente veritatis, soluta quis ipsum delectus ipsam ut magni eius autem veniam, ab nemo odio dicta esse praesentium accusantium perferendis voluptatem blanditiis itaque dolor assumenda quaerat iste? Nam asperiores temporibus nobis praesentium? Officia nobis voluptatem voluptates possimus. Fugit eos temporibus aperiam eligendi soluta culpa quisquam, quis illum repellendus unde vero inventore? Tempore, repellat? Cum a exercitationem, similique sunt dolores, repudiandae maxime deleniti et non, explicabo ad id eum consequatur quisquam ipsam sapiente veniam libero soluta illum sint porro? Nihil id illo, eius deleniti libero officiis amet eligendi accusantium quibusdam itaque quam ullam, saepe in sequi. Consequuntur, accusamus. Quasi qui ab vitae fuga, blanditiis quam fugit nobis nostrum labore nihil aliquid ipsam! Amet praesentium nihil tempora numquam beatae, repellat hic earum doloremque asperiores similique minus vitae quae laudantium iusto dolores magnam repudiandae velit voluptas et! Illum eius quos, placeat quas delectus voluptas expedita omnis.</p>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, eveniet modi consequuntur vero a fugiat unde ducimus minus deserunt dolore harum facilis quia quidem. Numquam consequatur iure architecto deserunt quidem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum inventore saepe illum, eaque repellendus animi cupiditate provident, itaque modi, ea obcaecati eligendi voluptate nostrum mollitia nam. Adipisci eaque praesentium in commodi officia obcaecati explicabo voluptatum, repellat inventore est earum ex sed laudantium maxime voluptates sint, ab eum ducimus facere temporibus dignissimos sequi? Voluptates hic atque at, officia minus quae enim voluptatem sapiente pariatur suscipit sint architecto eaque quos numquam ex alias laboriosam vitae delectus? Nisi molestiae modi sed distinctio at libero tempora adipisci temporibus itaque veritatis quaerat, inventore delectus nobis soluta laboriosam enim, eligendi dolorem voluptatum culpa aliquam assumenda dignissimos!</div>
+      <div class="flex justify-center items-center">
+        <div
+          class="bg-white cursor-pointer text-black flex justify-center items-center w-40 h-40 font-bold rounded-full hover:outline-[26px] outline-[0px] outline outline-[#ffffff4f] transition-all ease-linear duration-300 delay-400"
+        >
+          Explore
+        </div>
+      </div>
+    </div>
   </div>
-  
 </template>
-
 
 <script setup>
 // import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <style scoped>
-
+.khalid {
+  background-image: url(../assets/home/background-home-mobile.jpg);
+  padding: 10px;
+}
 </style>
