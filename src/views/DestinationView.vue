@@ -1,5 +1,88 @@
 <template>
-  <div>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem nemo ea commodi, amet fugiat harum possimus magnam ratione rem culpa ex architecto corrupti impedit dolorum est itaque? Eos autem veniam accusamus numquam illo architecto neque consequuntur inventore aut quia laborum, accusantium ab, velit expedita ducimus distinctio, minima quaerat repellat ullam? Vitae nulla at dolorum accusantium ex repudiandae cupiditate rerum consequuntur ipsam repellat. Nobis quisquam quae placeat repudiandae vitae quas, praesentium, corrupti itaque aliquam laudantium optio ullam, culpa labore unde et vero debitis rerum! Qui perferendis voluptates ipsum magnam voluptatum, tempore, totam accusantium quo quia, eveniet impedit laudantium laborum suscipit quasi. Esse dolorum repudiandae totam, odio, blanditiis tempore sapiente iusto explicabo reiciendis ea iure excepturi quasi nostrum dignissimos id culpa adipisci nemo exercitationem laboriosam aut hic incidunt a. Quae debitis veritatis distinctio minus corrupti rerum voluptates eaque! Consequatur amet quibusdam ipsa autem impedit hic ducimus sapiente tenetur explicabo mollitia minus nemo, beatae deserunt eaque nihil. Repellat incidunt ipsum dolore, commodi at in aliquam nihil, consequatur placeat vel ipsam cumque quam qui neque, tempore perferendis quos. Deserunt veniam animi porro quis maxime vitae pariatur voluptatum eos reiciendis fugit totam eum beatae, obcaecati nam repellat corrupti iusto. Eveniet maiores est beatae laudantium labore incidunt aliquid, itaque architecto consectetur aliquam odio eligendi ea quis quos, recusandae explicabo earum soluta, dicta dolor placeat nesciunt! Itaque fuga, maiores voluptas repellendus eum earum aspernatur repellat aperiam dolorem culpa beatae odit? Debitis delectus saepe molestias eius deleniti numquam, voluptas ipsum quis, quos nisi aut vel quibusdam exercitationem possimus suscipit illo laborum neque quam. Atque ratione consectetur quisquam necessitatibus? Suscipit nulla excepturi dolorum provident dolorem! Saepe dolor aspernatur voluptate pariatur velit ratione illo voluptas ipsa dolore eum, debitis culpa voluptates, tempore iste assumenda eveniet, nihil recusandae placeat maxime sed dignissimos accusamus. Iure tempora cumque dicta, optio laboriosam tempore!
+  <div
+    class="bg-[url('@/assets/destination/background-destination-mobile.jpg')] md:bg-[url('@/assets/destination/background-destination-tablet.jpg')] lg:bg-[url('@/assets/destination/background-destination-desktop.jpg')] bg-no-repeat bg-center bg-cover min-h-screen countainer"
+  >
+    <div class="pt-28"></div>
+
+
+
+
+
+
+
+    <!-- parent -->
+   <div class="grid grid-cols-2 gap-8 mt-4">
+
+    <!-- one -->
+    <div class="col-span-2 md:col-span-1  flex flex-col  items-center gap-10">
+      <div class="flex gap-3  justify-center text-2xl">
+        <span class="text-gray">01</span>
+        <p>PICK YOUR DESTINATION</p>
+      </div>
+      <img src="../assets/destination/image-moon.png" class="w-[250px]" alt="">
+    </div> 
+
+    <!-- two -->
+    <div class="col-span-2 md:col-span-1 flex items-center flex-col gap-4">
+      <ul class="flex gap-4">
+        <li>
+          <p @click="show = 'mars'">mars</p>
+          <div :class="show == 'mars' ? 'w-full':'w-0' " class="bg-red-100 h-1 transition-all ease-linear duration-300 delay-200"></div>
+        </li>
+        <li>
+          <p @click="show = 'moon'">moon</p>
+          <div :class="show == 'moon' ? 'w-full':'w-0' " class="bg-red-100 h-1 transition-all ease-linear duration-300 delay-200"></div>
+        </li>
+        <li>
+          <p @click="show = 'europa'">europa</p>
+          <div :class="show == 'europa' ? 'w-full':'w-0' " class="bg-red-100 h-1 transition-all ease-linear duration-300 delay-200"></div>
+        </li>
+        <li>
+          <p @click="show = 'titian'">titian</p>
+          <div :class="show == 'titian' ? 'w-full':'w-0' " class="bg-red-100 h-1 transition-all ease-linear duration-300 delay-200"></div>
+        </li>
+      
+      </ul>
+      <div class=" font-belle font-bold text-5xl">MOON</div>
+      <p class="text-center">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+      <div class="flex flex-col md:flex-row items-center gap-4 md:gap-20">
+        <div class="flex flex-col items-center gap-3">
+          <span class="text-gray">Avg. distance</span>
+          <p class="font-belle text-2xl font-semibold">384,400 KM</p>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <span class="text-gray">Est. travel time</span>
+          <p class="font-belle text-2xl font-semibold">3 DAYS</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+   </div>
+
+
+
+
+
   </div>
 </template>
+
+<script setup>
+import { ref } from "vue";
+const show = ref('mars');
+
+import { useAllDataStore } from '@/stores/alldata'
+
+// access the `store` variable anywhere in the component ✨
+const store = useAllDataStore()
+store.test('r')
+</script>
+
+<style scoped>
+ul li p {
+  @apply pb-2 cursor-pointer
+}
+</style>

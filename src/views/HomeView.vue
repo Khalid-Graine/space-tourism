@@ -22,13 +22,16 @@
           experience!
         </p>
       </div>
-
+       
       <div class="flex justify-center items-center">
-        <div
+        <RouterLink to="/destination" >
+          <div
           class="bg-white cursor-pointer text-black flex justify-center items-center w-40 h-40 font-bold rounded-full hover:outline-[26px] outline-[0px] outline outline-[#ffffff4f] transition-all ease-linear duration-300 delay-400"
         >
           Explore
         </div>
+        </RouterLink>
+       
       </div>
     </div>
   </div>
