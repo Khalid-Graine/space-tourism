@@ -1,27 +1,27 @@
 <template>
   <div id="demo" 
-  :class="{
-
-    'bg-red-300': false,
-     'bg-blue-200': false, 
-     'w-full': true,
-      'h-[100px]': true
-      
-      
-      }">
-    {{ message }}
+  class="w-full h-screen bg-blue-100 pt-20">
+    <div>
+      message:{{ message }}
+      <div>
+        <form action="">
+          <input type="text" placeholder="write a text" v-model="myText" class=" text-black">
+        </form>
+      </div>
+    </div>
   </div>
-  <button @click="toggleClass" class="bg-blue-200">Toggle Class</button>
+ 
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref,computed } from 'vue';
 
-const message = ref('');
-const isActive = ref(false);
 
-function toggleClass() {
-  isActive.value = !isActive.value;
-  message.value = isActive.value ? 'ok' : '';
-}
+const myText = ref('khaliid')
+
+
+const message = computed(
+  () => myText.value
+);
+
 </script>

@@ -1,9 +1,14 @@
-import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
-import data from './data'
+import {data} from './data'
 
-export const useAllDataStore = defineStore('alldata', {
-  state: () => (data),
+export const useAllDataStore = defineStore({
+  id: 'khalid',
+  state: () => ({ 
+    destinations:data.destinations,
+   crew: data.crew,
+    technology: data.technology,
+    
+  }),
   getters: {
     doubleCount: (state) => state.count * 2,
   },
