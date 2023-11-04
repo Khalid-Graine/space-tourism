@@ -1,5 +1,41 @@
 <template>
-  <div>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate atque illo nulla maxime placeat eaque provident dicta dolorem quam veniam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, excepturi ratione voluptate non libero natus necessitatibus molestias eos doloremque quae, nesciunt voluptatem facere. Neque, cupiditate. Et quia modi repellat itaque consectetur quisquam, explicabo dolorem sapiente dignissimos, hic assumenda totam in iure error magni nobis aut, magnam delectus. Nihil repellat quaerat velit rem, ad officia animi vitae quasi ullam asperiores nulla eum quis, numquam, beatae facilis fuga cum blanditiis. Fugiat sunt exercitationem esse perspiciatis quaerat placeat repellendus eveniet doloremque necessitatibus. Corrupti fuga, excepturi recusandae minus illum sunt repellat quas, nulla sint dignissimos cum rem perferendis ipsam perspiciatis harum libero sed vitae in laudantium nesciunt hic beatae? Dolor voluptas repellat voluptatum animi corporis ea, incidunt velit expedita ipsam, necessitatibus sit id reprehenderit consectetur alias magnam exercitationem sunt a quis at odio cum eius excepturi! Earum repellat sapiente natus numquam aliquam distinctio omnis nesciunt, rem ipsum nobis quasi impedit minus vitae dolores amet facilis repudiandae voluptatum sunt, laudantium porro, sequi commodi? Incidunt quasi error id obcaecati amet ab commodi, voluptatibus optio nam inventore excepturi temporibus vero? Enim sint nihil tempora sequi expedita accusamus aspernatur fugit quasi maiores ipsum earum, voluptatum incidunt officiis consectetur voluptas id praesentium mollitia est nulla minus exercitationem reiciendis quibusdam. In deleniti dignissimos magni quia quo exercitationem esse reprehenderit dolore nulla, inventore, temporibus officia sapiente ex aperiam, facilis maxime. Ea a ipsa repellendus, esse nobis obcaecati sed dolorum mollitia adipisci, exercitationem accusamus quia eum? Perspiciatis pariatur ipsa aut beatae sit provident, suscipit deleniti sapiente tempora, nisi minus voluptatibus similique neque. aspernatur neque minus debinostrum.
+  <div
+    class="bg-[url('@/assets/crew/background-crew-mobile.jpg')] md:bg-[url('@/assets/crew/background-crew-tablet.jpg')] lg:bg-[url('@/assets/crew/background-crew-desktop.jpg')] bg-no-repeat bg-center bg-cover min-h-screen countainer 
+    borderr"
+  >
+    <div class="pt-28"></div>
+
+    <div class=" bg-yellow-200 flex">
+    <!-- one -->
+    <div class=" bg-red-300 max-h-screen">
+     /
+    </div>
+    <!-- two -->
+    <div class="bg-green-300 max-h-screen">
+      <div>
+       <p> COMMANDER</p>
+       <p>DOUGLAS HURLEY</p>
+       <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam similique ipsa dicta rerum. Harum sint cumque quidem nobis, est adipisci.
+       </p>
+      </div>
+    </div>
+
+    <div class="static bottom-0   right-1/4 ">
+      <img src="../../public/crew/image-douglas-hurley.png" class="w-[200px]" alt="">
+    </div>
+</div>
+
+
   </div>
 </template>
+
+<script setup>
+import { ref, computed } from "vue";
+import { useAllDataStore } from "@/stores/alldata";
+
+const myStore = useAllDataStore();
+const { crew } = myStore;
+// const imgUrl = computed(() => `/image-${show.value}.png`);
+</script>
+

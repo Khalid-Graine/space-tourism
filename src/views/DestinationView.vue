@@ -5,10 +5,10 @@
     <div class="pt-28"></div>
 
 
-    <!-- parent -->
+   
    <div class="grid grid-cols-2 gap-8 mt-4 countainer">
 
-    <!-- one -->
+ 
     <div class="col-span-2 md:col-span-1  flex flex-col  items-center gap-10 ">
       <div class="flex gap-3  justify-center text-2xl">
         <span class="text-gray">01</span>
@@ -17,7 +17,7 @@
       <img :src="imgUrl" class="w-[250px]" alt="">
     </div> 
 
-    <!-- two -->
+  
     <div class="col-span-2 md:col-span-1 flex items-center flex-col gap-4 pb-10">
       <ul class="flex gap-4">
   <li v-for="destination in destinations" :key="destination.name" class="destination-link">
