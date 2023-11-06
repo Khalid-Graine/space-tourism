@@ -15,13 +15,15 @@
       <div
         class=" col-span-3 md:col-span-1 md:row-span-6 flex items-center justify-center"
       >
+      <!-- for phone size -->
         <img
-          src="../../public/technology/image-launch-vehicle-portrait.jpg"
+          :src="`/technology/${data.image}-portrait.jpg`"
           class="hidden md:block object-containl"
           alt=""
         />
+        <!-- for bigger devices -->
         <img
-          src="../../public/technology/image-launch-vehicle-landscape.jpg"
+          :src="`/technology/${data.image}-landscape.jpg`"
           class="md:hidden object-fill"
           alt=""
         />
@@ -30,9 +32,15 @@
         class=" col-span-3 md:col-span-2 md:row-span-5 flex flex-col items-center md:flex-row gap-4 md:gap-8"
       >
         <ul class="flex gap-6 md:flex-col p-2">
-          <li @click="choose(1)">1</li>
-          <li  @click="choose(2)">2</li>
-          <li  @click="choose(3)">3</li>
+          <li @click="choose(1)" 
+          :class="[targetIndex === 1 ? 'bg-gray text-black':'']"
+          >1</li>
+          <li  @click="choose(2)"
+          :class="[targetIndex === 2 ? 'bg-gray text-black':'']"
+          >2</li>
+          <li  @click="choose(3)"
+          :class="[targetIndex === 3 ? 'bg-gray text-black':'']"
+          >3</li>
         </ul>
         <div class="flex flex-col items-center gap-4 md:items-start">
           <p class="text-gray text-bs">THE TERMINOLOGY...</p>

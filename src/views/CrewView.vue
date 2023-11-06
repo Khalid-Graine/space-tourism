@@ -22,7 +22,7 @@
     </div>
 
     <div class="static bottom-0   right-1/4 ">
-      <img src="../../public/crew/image-douglas-hurley.png" class="w-[200px]" alt="">
+      <img src="/crew/image-douglas-hurley.png" class="w-[200px]" alt="">
     </div>
 </div>
 
