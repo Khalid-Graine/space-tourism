@@ -1,24 +1,22 @@
-import { defineStore } from 'pinia'
-import {data} from './data'
+import { defineStore } from 'pinia';
+import { data } from './data';
 
 export const useAllDataStore = defineStore({
   id: 'khalid',
-  state: () => ({ 
-    destinations:data.destinations,
-   crew: data.crew,
+  state: () => ({
+    destinations: data.destinations,
+    crew: data.crew,
     technology: data.technology,
-    
   }),
   getters: {
     doubleCount: (state) => state.count * 2,
   },
   actions: {
     increment() {
-      this.count++
-      
+      this.count++;
     },
     test() {
-      console.log(this.count)
-    }
+      console.log(this.count);
+    },
   },
-})
+});
