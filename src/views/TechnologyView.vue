@@ -1,17 +1,18 @@
 <template>
   <div
-    class="bg-[url('@/assets/technology/background-technology-mobile.jpg')] md:bg-[url('@/assets/technology/background-technology-tablet.jpg')] lg:bg-[url('@/assets/technology/background-technology-desktop.jpg')] bg-no-repeat bg-center bg-cover min-h-screen countainer borderr"
+    class="bg-[url('@/assets/technology/background-technology-mobile.jpg')] md:bg-[url('@/assets/technology/background-technology-tablet.jpg')] lg:bg-[url('@/assets/technology/background-technology-desktop.jpg')] bg-no-repeat bg-center bg-cover min-h-screen countainer "
   >
 
     <div class="h-20 md:mb-10 "></div>
 
     <div class="grid grid-rows-1 md:grid-rows-6   grid-cols-3 gap-4 ">
-      <div
+      <!-- <div
         class=" col-span-3 md:col-span-2 md:row-span-1 text-center md:text-start md:pl-4 "
       >
         <span class="mr-2">0{{targetIndex  }}</span>
         <span class="uppercase">{{ data.name }}</span>
-      </div>
+      </div> -->
+      <TheTitle :number="'0'+targetIndex" :title="data.name" :classes="'col-span-3 text-xl md:col-span-2 md:row-span-1 text-center md:text-start md:pl-4'"/>
       <div
         class=" col-span-3 md:col-span-1 md:row-span-6 flex items-center justify-center"
       >
@@ -60,6 +61,7 @@
 <script setup>
 import { computed,ref } from "vue";
 import { useAllDataStore } from "../stores/alldata";
+import TheTitle from "../components/TheTitle.vue";
 const MyData = useAllDataStore();
 const { technology } = MyData;
 const targetIndex = ref(1);

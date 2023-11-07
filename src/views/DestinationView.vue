@@ -10,10 +10,9 @@
 
  
     <div class="col-span-2 md:col-span-1  flex flex-col  items-center gap-10 ">
-      <div class="flex gap-3  justify-center text-2xl">
-        <span class="text-gray">01</span>
-        <p>PICK YOUR DESTINATION</p>
-      </div>
+      
+      <TheTitle :number="'01'" :title="'PICK YOUR DESTINATION'"/>
+      
       <img :src="imgUrl" class="w-[250px]" alt="">
     </div> 
 
@@ -65,6 +64,7 @@
 <script setup>
 import { ref,computed } from "vue";
 import {useAllDataStore} from '@/stores/alldata';
+import TheTitle from "../components/TheTitle.vue";
 
 const show = ref('mars');
 const myStore = useAllDataStore();

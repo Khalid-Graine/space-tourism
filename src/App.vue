@@ -5,7 +5,9 @@
   >
   <header class="countainer    bg-transparent absolute top-4   w-full flex items-center justify-between">
 
-      <img src="./assets/shared/logo.svg" class=" mr-6" alt="" />
+      <a href="/">
+        <img src="./assets/shared/logo.svg" class=" mr-6" alt="" />
+      </a>
       <div
         class="hidden lg:flex w-full h-[1px] bg-galaxy flex-grow rounded-l-sm"
       >

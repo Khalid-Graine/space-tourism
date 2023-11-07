@@ -49,12 +49,7 @@ export const data = {
             "role": "Commander",
             "bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
         },
-        {
-            "name": "Mark Shuttleworth",
-            "image":"image-mark-shuttleworth",
-            "role": "Mission Specialist",
-            "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
-        },
+       
         {
             "name": "Victor Glover",
             "image":  "image-victor-glover",
@@ -63,12 +58,15 @@ export const data = {
         },
         {
             "name": "Anousheh Ansari",
-            "images": {
-                "png": "./assets/crew/image-anousheh-ansari",
-                "webp": "./assets/crew/image-anousheh-ansari.webp"
-            },
+            "image":  "image-anousheh-ansari",
             "role": "Flight Engineer",
             "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+        },
+        {
+            "name": "Mark Shuttleworth",
+            "image":"image-mark-shuttleworth",
+            "role": "Mission Specialist",
+            "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
         }
     ],
     "technology": [
