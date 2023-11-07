@@ -26,7 +26,7 @@
         class="col-span-full flex flex-col justify-end overflow-hidden md:col-span-4"
       >
         <img
-          :src="`../../public/crew/${data.image}.png`"
+          :src="`/crew/${data.image}.png`"
           alt=""
           class="mx-auto w-9/12"
         />

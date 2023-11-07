@@ -20,7 +20,7 @@
       <!-- Nav for ipdate and phone -->
       <nav
         :class="showMenu ? 'right-0' : '-right-full'"
-        class="fixed top-0 flex h-screen w-full flex-col justify-center gap-10 bg-[#273c98] transition-all delay-100 duration-500 ease-in-out"
+        class="fixed top-0 flex h-screen w-full flex-col justify-center gap-10 custom-color transition-all delay-100 duration-500 ease-in-out"
       >
         <div class="ml-10 flex flex-col gap-10 uppercase">
           <Links @closeMenu="closeMenu()" />
@@ -45,7 +45,7 @@
       </div>
     </header>
 
-    <div class="">
+    <div >
       <RouterView />
     </div>
   </div>
@@ -70,5 +70,10 @@ function closeMenu() {
 <style>
 .custom-shadow {
   box-shadow: 100px 0px 0px #fefefe20;
+}
+.custom-color {
+backdrop-filter: blur(10px) saturate(100%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
 }
 </style>
