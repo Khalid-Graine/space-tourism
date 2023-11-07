@@ -9,6 +9,6 @@
 }
 
 .borderr {
-    @apply border border-green-500
+    @apply border-4 border-green-500
 }
 

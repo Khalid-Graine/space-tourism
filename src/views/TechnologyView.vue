@@ -58,20 +58,19 @@
 </template>
 
 <script setup>
-import { computed,ref, reactive } from "vue";
+import { computed,ref } from "vue";
 import { useAllDataStore } from "../stores/alldata";
 const MyData = useAllDataStore();
 const { technology } = MyData;
 const targetIndex = ref(1);
 
-// const imgUrl = computed(() => `/image-${show.value}.png`);
 function choose(n) {
   targetIndex.value = n;
 }
 const data = computed(() => technology[targetIndex.value -1])
 </script>
 
-<style scope>
+<style scoped>
 ul li {
   @apply w-10 h-10  rounded-full border-gray border-[2px] flex justify-center items-center hover:bg-gray hover:text-black cursor-pointer;
 }
